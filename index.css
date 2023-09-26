@@ -17,7 +17,7 @@ a {
     /*gap: 25px;*/
     position: fixed;
     width: 100%;
-
+    z-index: 99;
     & a:hover {
         font-weight: bolder;
     }
@@ -28,6 +28,8 @@ a {
     background-size: cover;
     width: 100%;
     height: 80vh;
+    min-height: 360px;
+    position: relative;
 }
 
 #secondaryNav {
@@ -44,6 +46,7 @@ a {
 
 #left {
     font-size: 1rem;
+    font-family: 'PT Serif', serif;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -53,23 +56,25 @@ a {
 }
 
 #center {
-
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
 #right {
+    color: white;
+    font-family: 'PT Serif', serif;
     font-size: 20px;
-    flex: 1;
-    display: flex;
-    justify-content: end;
+    /* font-weight: bold; */
     min-width: 150px;
-
         & a:hover {
             border-bottom: 3px solid rgb(179, 3, 3);
         }
-    
+    padding-right: 3vw;
+    padding-bottom: 5vh;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 #bigSalonNameWrapper {
@@ -81,7 +86,8 @@ a {
 
 #bigSalonName {
     color: white;
-    font-size: 50px;
+    /*font-family: 'PT Serif', serif;*/
+    font-size: 55px;
     font-weight: bolder;
     padding: 0px 20px;
     /*opacity: 80%;*/
@@ -97,10 +103,104 @@ a {
     border-bottom: 3px solid rgb(179, 3, 3);
 }
 
-#mainContent {
-    height: 200vh;
+#servicesTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+    font-size: 25px;
+    font-weight: bolder;
+    
+    /*border-bottom: 2px solid red;*/
+    
 }
 
+#servicesTitleDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+}
+
+#services {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.service{
+    flex: 1;
+    height: 70vh;
+    max-width: 70vw;
+    border: 1px solid black;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .serviceLabel{
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: white;
+        /*border-right: 1px solid black;
+        border-bottom: 1px solid black;*/
+        width: fit-content;
+        padding: 5px 10px;
+    }
+}
+
+#hair{
+    background: url(./pexels-cottonbro-studio-3993444.jpg);
+    background-size: cover;
+}
+
+.serviceContent{
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    width: 85%;
+    height: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*border: 1px solid red;*/
+    &:hover{
+        opacity: 1;
+    }
+}
+.serviceNames{
+    padding: 20px 0;
+}
+
+.fontSerif{
+    font-family: 'PT Serif', serif;
+}
+.servicePrices{
+    padding: 20px 0;
+    font-weight: bold;
+}
+#nails{
+    background: url(./pexels-cottonbro-studio-3997391.jpg);
+    background-size: cover;
+}
+
+#wax{
+    background: url(./pexels-bruna-gabrielle-félix-16335244.jpg);
+    background-size: cover;
+}
+
+#lashes{
+    background: url(./pexels-nataliya-vaitkevich-5128220.jpg);
+    background-size: cover;
+}
 /*************************************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
