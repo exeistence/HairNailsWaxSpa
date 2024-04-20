@@ -237,18 +237,11 @@ button{
 #left {
     font-size: 1rem;
     font-family: 'PT Serif', serif;
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: start;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     min-width: 150px;
-}
-
-#center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
 }
 
 #right {
@@ -274,7 +267,7 @@ button{
     color: white;
     font-size: 55px;
     font-weight: bolder;
-    padding: 0px 20px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,8 +349,12 @@ button{
     background-size: cover;
 }
 
+#hairSubcategories{
+    padding-left: 13px;
+}
+
 .serviceContent {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.88);
     opacity: 0;
     width: 85%;
     height: 70%;
@@ -574,4 +571,5 @@ button{
     #apt {display: inline;}
     #testimonialWrapper {width: 90vw;}
     #testimonial {font-size: 16px;}
+    #secondaryNav {padding: 70px 15px;}
 }
